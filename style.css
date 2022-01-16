@@ -125,6 +125,9 @@ a {
   margin-bottom: 1em;
   padding: 0.5em;
 }
+.items .first {
+  margin-bottom: 1em;
+}
 .items img {
   width: 70%;
 }

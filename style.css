@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+/* common style */
+:root {
+  --theme-color: #e02c6d;
+  --bg-main: rgba(241, 234, 234, 0.568);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-main);
+}
+.container {
+  padding: 35px 15px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #e02c6d;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  display: none;
+}
+.hero-area {
+  margin: 22px 35px;
+  max-width: 100%;
+}
+.hero-image {
+  max-width: 460px;
+  background-image: url("./images/Circledesign.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+.hero-image img {
+  max-width: 65%;
+}
+.hero-area:hover .hero-image img {
+  transform: scale(1.1) rotate(5deg);
+  transition: all linear 1s;
+}
+
+.hero-info {
+  text-align: center;
+  padding: 1em;
+}
+.hero-info button {
+  padding: 10px 25px;
+  margin: 1.7em 0;
+  background-color: var(--theme-color);
+  color: white;
+  border: 0;
+  border-radius: 3em;
+}
+
+.logos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2em 2.7em;
+}
+.logos img {
+  width: 50%;
+}
+.logos li + li {
+  margin-left: 1.8em;
+}
+
+.popular-collections {
+  margin: 2em o;
+}
+.popular-collections h2,
+.new-arrivals h2 {
+  text-align: center;
+  margin-bottom: 1.4em;
+}
+.collection {
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+}
+.see-more {
+  text-align: right;
+}
+
+.collection img {
+  width: 100%;
+}
+
+.items {
+  text-align: center;
+}
+.items li {
+  background-color: white;
+  border-radius: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+.items img {
+  width: 70%;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.icons li + li {
+  margin-left: 8px;
+}
+.icons a {
+  color: white;
+}
+@media (min-width: 481px) {
+  .hero-image {
+    margin: 0 auto;
+  }
+  .logos li + li {
+    margin-left: 1em;
+  }
+  .collections,
+  .items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1em;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    margin: 53px 100px;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .nav {
+    display: block;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links li + li,
+  .cart {
+    margin-left: 2em;
+  }
+
+  .hero-area {
+    margin: 50px 0;
+  }
+  .hero-info {
+    flex: 1;
+  }
+  .hero-info h1 {
+    font-size: 3.1em;
+  }
+  .hero-image {
+    flex: 1;
+    order: 1;
+  }
+  .hero-image img {
+    max-width: 90%;
+  }
+
+  .company-logos {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.514),
+        rgba(211, 211, 211, 0.562),
+        rgba(255, 255, 255, 0.486)
+      )
+      1;
+    margin-bottom: 97px;
+  }
+  .logos li + li {
+    margin-left: 3.8em;
+  }
+
+  .popular-collections {
+    margin: 2em;
+  }
+  .popular-collections h2,
+  .new-arrivals h2 {
+    font-size: 28px;
+  }
+  .collections {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

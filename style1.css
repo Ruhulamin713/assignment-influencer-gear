@@ -1,0 +1,270 @@
+:root {
+  --theme-color: #e02c6d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: #f3efef9a;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #e02c6d;
+}
+.nav {
+  display: none;
+}
+.title {
+  text-align: center;
+}
+.hero-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+.hero-image {
+  background-image: url("./images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero-image img {
+  width: 257px;
+}
+.hero-info {
+  text-align: center;
+}
+.hero-info p {
+  margin: 17px 0;
+}
+.hero-info button {
+  margin-top: 26px;
+  padding: 10px 24px;
+  background-color: var(--theme-color);
+  border: none;
+  color: #fff;
+  border-radius: 2.5em;
+}
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 36px 0;
+}
+.logos li + li {
+  margin-left: 22px;
+}
+.collections {
+  display: flex;
+  flex-direction: column;
+}
+.collection {
+  padding: 17px 14px;
+  margin-top: 10px;
+  background-color: #ffff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px lightgray;
+}
+.see-more {
+  text-align: right;
+  margin: 20px 0;
+  color: var(--theme-color);
+}
+.see-more a {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--theme-color);
+}
+.footer {
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 50px;
+  width: 100%;
+}
+.footer .icons {
+  justify-content: center;
+  display: flex;
+}
+.icons li {
+  margin-left: 16px;
+}
+.icons a {
+  color: white;
+}
+
+@media (min-width: 425px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    display: block;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .nav-links li + li {
+    margin-left: 15px;
+  }
+  .logos li + li {
+    margin-left: 10px;
+  }
+  .collections {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 1440px;
+    font-family: "Poppins", sans-serif;
+    background-color: #f3efef9a;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #e02c6d;
+  }
+  .container {
+    width: 100%;
+    padding: 87px 120px;
+  }
+  /* header area */
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    color: #e02c6d;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .nav-links a {
+    font-weight: 600;
+    margin-left: 34px;
+  }
+
+  .hero-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-image {
+    width: 440px;
+    background-image: url("./images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    order: 1;
+  }
+  .hero-image image {
+    width: 100%;
+  }
+  .hero-info h1 {
+    font-size: 3.18rem;
+  }
+  .hero-info button {
+    margin-top: 26px;
+    padding: 10px 24px;
+    background-color: var(--theme-color);
+    border: none;
+    color: #fff;
+    border-radius: 2.5em;
+  }
+  .hero-info .fas {
+    margin-left: 8px;
+  }
+  .company-logos {
+    margin: 97px 0;
+  }
+  .logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 0;
+  }
+  .logos li + li {
+    margin-left: 50px;
+  }
+
+  /* main area */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .popular-collections {
+    width: 1047px;
+  }
+  .popular-collections h2 {
+    padding-bottom: 30px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .collections {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .collection {
+    padding: 17px 14px;
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px lightgray;
+  }
+  .info h3 {
+    font-size: 28px;
+    font-weight: 500;
+    color: rgba(24, 25, 31, 1);
+  }
+  .see-more {
+    text-align: right;
+    margin-top: 20px;
+    color: var(--theme-color);
+  }
+  .see-more a {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--theme-color);
+  }
+  .featured-product {
+    width: 1110px;
+    height: 270px;
+  }
+  .footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 50px;
+    width: 100%;
+  }
+  .footer .icons {
+    justify-content: center;
+    display: flex;
+  }
+  .icons li {
+    margin-left: 16px;
+  }
+  .icons a {
+    color: white;
+  }
+}
